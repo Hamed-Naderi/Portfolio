@@ -1,0 +1,296 @@
+
+.page-section {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  @include atSmall {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+
+  &--beige {
+    background-color: $lightGreene;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.school-logo-text {
+  padding: 0 0 20px 0;
+  position: relative;
+  z-index: 20;
+  margin: 0px;
+  font-size: 40px;
+  font-weight: 500px;
+  font-family: Broadway;
+  transition: 1s;
+}
+
+
+.school-logo-text a {
+  color: $mainRed;;
+  text-decoration: none;
+}
+
+.school-logo-text--alt-color a {
+  color: #666;
+
+  &:hover {
+    color: $mainRed;
+    text-decoration: underline;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-loader {
+  margin-top: 45px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 0.25rem solid rgba(0, 0, 0, 0.2);
+  border-top-color: black;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+
+.c-orange {
+  color: $darkOrange;
+}
+.c-blue {
+  color: $mainRed;
+}
+.c-white {
+  color: #fff;
+}
+.c-dark {
+  color: #333;
+}
+.gray {
+  color: #999999;
+}
+
+.search-trigger {
+  display: none;
+  color: $mainRed;
+  position: relative;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 35px;
+  font-weight: 1000px;
+  transition: 1s;
+  @include atMedium {
+    display: inline-block;
+    padding: 5px 0 15px 0;
+  }
+}
+
+.search-trigger:hover {
+  text-decoration: underline;
+}
+
+.social-icons-list {
+  display: flex;
+  margin: 0 -8px;
+}
+
+.social-icons-list li {
+  flex: 1;
+  margin: 0 8px;
+}
+
+.social-icons-list li a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+.social-icons-list li a:hover {
+  opacity: 0.75;
+}
+
+.social-color-facebook {
+  background-color: #0226f0;
+}
+.social-color-youtube {
+  background-color: #cc1e1f;
+}
+.social-color-twitter {
+  background-color: #03b8be;
+}
+.social-color-instagram {
+  background-color: #d8226b;
+}
+
+.nav-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list a {
+  font-size: 0.9rem;
+  color: rgb(61, 60, 60);
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  color: $mainRed;
+  text-decoration: underline;
+}
+
+.one-half,
+.one-third,
+.one-fourth,
+.one-fifth,
+.one-sixth {
+  padding-bottom: 1.6rem;
+}
+
+@include atMedium {
+  .row {
+    margin-right: -50px;
+  }
+
+  .one-half,
+  .one-third,
+  .two-thirds,
+  .one-fourth,
+  .one-fifth,
+  .one-sixth {
+    padding-bottom: 0;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 50px;
+  }
+
+  .two-thirds {
+    width: 66.66%;
+  }
+  .one-half {
+    width: 50%;
+  }
+  .one-third {
+    width: 33.33%;
+  }
+  .one-quarter {
+    width: 25%;
+  }
+  .one-fifth {
+    width: 20%;
+  }
+  .one-sixth {
+    width: 16.66%;
+  }
+}
+
+/* Make Top WP Admin Bar Fixed on Mobile */
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}
+
+/* Seach Form */
+.search-form {
+  background-color: #dedede;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-form label {
+  display: block;
+}
+
+.search-form-row {
+  display: flex;
+}
+
+.search-form .s {
+  min-width: 20px;
+  flex-basis: auto;
+  flex-grow: 1;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  @include atSmall {
+    font-size: 1.4rem;
+  }
+  @include atMedium {
+    font-size: 1.4rem;
+  }
+}
+
+.search-submit {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: $mainRed;
+  font-family: "Roboto", sans-serif;
+  padding: 0 20px;
+  margin-left: 10px;
+}
+
+
+
+/* Destination styles */
+.the-Destin-text {
+  font-size: 30px;
+  color: $bluishGreen;
+}
+
+.the-Destin-text:hover {
+  font-size: 30px;
+  transition: .3s;
+}
+
+/* Continent styles */
+.the-contin-text {
+  font-size: 25px;
+  color: $darkGreen;
+}
+
+.the-contin-text:hover {
+  font-size: 30px;
+  transition: .3s;
+}
+
+/* Text in pages styles */
+.title-text {
+  font-size: 25px;
+}
+
+.past-text a {
+  font-size: 27px;
+  color: #be3131;
+}
+
+.past-text a:hover {
+  text-decoration: underline;
+}
+
+.fa-arrow-right {
+  font-size: 35px;
+}
+
+
+
